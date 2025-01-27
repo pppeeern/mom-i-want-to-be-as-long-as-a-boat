@@ -1141,6 +1141,10 @@ PrefabInstance:
       propertyPath: range
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6489492333262812891, guid: c036f19ea45e17746acbf80d8ab1ee96, type: 3}
+      propertyPath: destroyKey
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 7455929485338210085, guid: c036f19ea45e17746acbf80d8ab1ee96, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.89
