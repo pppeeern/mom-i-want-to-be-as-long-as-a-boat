@@ -10,11 +10,9 @@ public class countdownControl : MonoBehaviour
     private float leftTime;
 
     public TMP_Text timertext;
-    public Button startbtn;
 
-    public void startClick(){
+    public void Start(){
         leftTime = startTime;
-        startbtn.gameObject.SetActive(false);
         timertext.gameObject.SetActive(true);
         StartCoroutine(startCount());
     }

@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 860859154326939004}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69,7 +69,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 1521232842992910906}
   - component: {fileID: 3192751775617220569}
   - component: {fileID: 2577024657233874303}
-  - component: {fileID: -8474789324446112711}
+  - component: {fileID: 130871587436095559}
   - component: {fileID: 5831351909822892860}
   m_Layer: 6
   m_Name: Boat
@@ -214,7 +214,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c89c362e29cf3f94ab20f8e94ff26bac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -252,8 +252,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &-8474789324446112711
-CircleCollider2D:
+--- !u!70 &130871587436095559
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -284,9 +284,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_Offset: {x: -0.04910755, y: -0.0070152283}
+  m_Size: {x: 1.1686296, y: 7.6963024}
+  m_Direction: 0
 --- !u!114 &5831351909822892860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,3 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tap: 0
+  _stamina: 100
+  stamina: 0
+  dec: 0
+  regen: 0
